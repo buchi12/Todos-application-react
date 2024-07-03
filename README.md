@@ -1,3 +1,95 @@
+# Todo List Application
+
+This is a simple Todo List application built using React. It allows users to add, complete, and remove tasks. The application stores tasks in local storage to preserve the state across browser sessions and includes an edited `reducex` file for state management.
+
+## Features
+
+- Add new tasks
+- Mark tasks as completed
+- Edit tasks
+- Remove tasks
+- Persist tasks using local storage
+- Basic styling for a clean and intuitive user interface
+
+## Project Structure
+
+```
+.
+├── public
+│   ├── index.html
+│   └── ...
+├── src
+│   ├── components
+│   │   ├── App.js
+│   │   ├── TodoList.js
+│   │   └── TodoItem.js
+│   ├── reducers
+│   │   └── reducex.js
+│   ├── styles
+│   │   └── styles.css
+│   ├── App.js
+│   ├── index.js
+│   └── ...
+├── package.json
+└── README.md
+```
+
+## Components
+
+### App Component
+
+This is the main component of the application. It manages the state of the tasks using `reducex` and local storage. It renders the `TodoList` component.
+
+### TodoList Component
+
+This component receives the list of tasks from the `App` component and renders each task using the `TodoItem` component.
+
+### TodoItem Component
+
+This component represents an individual task. It displays the task name and includes buttons to mark the task as completed, edit the task, or remove the task.
+
+## Reducers
+
+### reducex.js
+
+This file contains the reducer functions used to manage the state of the tasks. It handles actions such as adding, editing, completing, and removing tasks.
+
+## Installation
+
+1. Clone the repository:
+
+```sh
+git clone https://github.com/yourusername/todo-list.git
+```
+
+2. Navigate to the project directory:
+
+```sh
+cd todo-list
+```
+
+3. Install the dependencies:
+
+```sh
+npm install
+```
+
+## Usage
+
+1. Start the development server:
+
+```sh
+npm start
+```
+
+2. Open your browser and go to [http://localhost:3000](http://localhost:3000) to see the application in action.
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
